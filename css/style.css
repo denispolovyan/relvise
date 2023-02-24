@@ -48,6 +48,10 @@
           flex: 0 0 70px;
   color: #737373;
 }
+.header__item:hover{
+	text-decoration: underline;
+	color:#252B42;
+ }
 
 @media (max-width: 520px) {
   .header__logo {
@@ -1116,16 +1120,20 @@
   border: 1px solid #FF7B47;
   border-radius: 5px;
 }
-.submit__button button {
-  background-color: #fff;
-  color: #FF7B47;
-}
-
-.submit__button-dark button {
-  background-color: #17213C;
-  color: #fff;
-}
-
+.submit__button-dark {
+	background-color: #17213C;
+	color: #fff;
+ }
+.submit__button:hover {
+	background-color: #17213C;
+	color: #fff;
+	transition-duration: 1s;
+ }
+.submit__button-dark:hover {
+	background-color: #fff;
+	color: #000;
+	transition-duration: 1s;
+ }
 @media (max-width: 1100px) {
   .touch {
     padding: 60px 0px;
@@ -1268,6 +1276,7 @@
   color: #000;
   background-color: #FAFAFA;
   border: 1px solid #000;
+  transition-duration: 1s;
 }
 .contact__button p {
   padding: 15px 40px;
